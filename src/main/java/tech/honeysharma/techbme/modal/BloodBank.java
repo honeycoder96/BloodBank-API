@@ -3,10 +3,9 @@ package tech.honeysharma.techbme.modal;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
-@Table(name = "bloodbank")
+// @Table(name = "bloodbank")
 public class BloodBank {
 
 	@Id
@@ -66,6 +65,36 @@ public class BloodBank {
 
 	@Column(name = "longitude")
 	private String longitude;
+
+	public BloodBank() {
+		super();
+	}
+
+	public BloodBank(String id, String name, String state, String district, String city, String address, String pincode,
+			String number, String mobile, String helpline, String email, String website, String nodal_officer,
+			String contact_nodal_officer, String mobile_nodal_officer, String email_nodal_officer, String category,
+			String latitude, String longitude) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.state = state;
+		this.district = district;
+		this.city = city;
+		this.address = address;
+		this.pincode = pincode;
+		this.number = number;
+		this.mobile = mobile;
+		this.helpline = helpline;
+		this.email = email;
+		this.website = website;
+		this.nodal_officer = nodal_officer;
+		this.contact_nodal_officer = contact_nodal_officer;
+		this.mobile_nodal_officer = mobile_nodal_officer;
+		this.email_nodal_officer = email_nodal_officer;
+		this.category = category;
+		this.latitude = latitude;
+		this.longitude = longitude;
+	}
 
 	public String getId() {
 		return id;
@@ -219,4 +248,48 @@ public class BloodBank {
 		this.longitude = longitude;
 	}
 
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("BloodBank [id=");
+		builder.append(id);
+		builder.append(", name=");
+		builder.append(name);
+		builder.append(", state=");
+		builder.append(state);
+		builder.append(", district=");
+		builder.append(district);
+		builder.append(", city=");
+		builder.append(city);
+		builder.append(", address=");
+		builder.append(address);
+		builder.append(", pincode=");
+		builder.append(pincode);
+		builder.append(", number=");
+		builder.append(number);
+		builder.append(", mobile=");
+		builder.append(mobile);
+		builder.append(", helpline=");
+		builder.append(helpline);
+		builder.append(", email=");
+		builder.append(email);
+		builder.append(", website=");
+		builder.append(website);
+		builder.append(", nodal_officer=");
+		builder.append(nodal_officer);
+		builder.append(", contact_nodal_officer=");
+		builder.append(contact_nodal_officer);
+		builder.append(", mobile_nodal_officer=");
+		builder.append(mobile_nodal_officer);
+		builder.append(", email_nodal_officer=");
+		builder.append(email_nodal_officer);
+		builder.append(", category=");
+		builder.append(category);
+		builder.append(", latitude=");
+		builder.append(latitude);
+		builder.append(", longitude=");
+		builder.append(longitude);
+		builder.append("]");
+		return builder.toString();
+	}
 }
