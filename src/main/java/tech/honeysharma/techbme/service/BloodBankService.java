@@ -28,4 +28,45 @@ public class BloodBankService {
 		return bloodbankrepository.findById(id);
 	}
 
+	public void addTopic(BloodBank bloodbank) {
+
+		bloodbankrepository.save(bloodbank);
+
+	}
+
+	public void updateTopic(String id, BloodBank bloodbank) {
+
+		bloodbankrepository.save(bloodbank);
+	}
+
+	public void deleteTopic(String id) {
+
+		bloodbankrepository.deleteById(id);
+	}
+
+	public List<BloodBank> getBloodBankByCategory(String category) {
+
+		return bloodbankrepository.findBycategory(category);
+	}
+
+	public List<BloodBank> getBloodBankByCity(String city) {
+
+		return bloodbankrepository.findBycity(city);
+	}
+
+	public List<BloodBank> getBloodBankByDistrict(String district) {
+
+		return bloodbankrepository.findBydistrict(district);
+	}
+
+	public List<BloodBank> getBloodBankByPincode(String pincode) {
+
+		return bloodbankrepository.findBypincode(pincode);
+	}
+
+	public List<BloodBank> getBloodBankByState(String state) {
+
+		return bloodbankrepository.findBystate(state);
+	}
+
 }
