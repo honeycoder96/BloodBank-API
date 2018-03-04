@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 <title>Error Page</title>
 <!-- Meta tag Keywords -->
@@ -11,12 +11,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Meta tag Keywords -->
 
 <!-- css files -->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-<!-- //css files -->
-
+<link type="text/css" th:href="@{/css/style.css}" rel="stylesheet" media="screen" />
 <!-- online-fonts -->
 <link href="//fonts.googleapis.com/css?family=Ropa+Sans:400,400i&amp;subset=latin-ext" rel="stylesheet">
-<!--//online-fonts -->
 </head>
 <body>
 <div class="header">
@@ -25,7 +22,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <div class="w3-main">
 	<div class="agile-info">
 		<h3>SORRY</h3>
-		<h2>4<img src="images/confused.gif" alt="image">4</h2>
+		<h2>4<img src="images/confused.gif" alt="image"/>4</h2>
 		<p>Looks like you took a wrong turn.<br>
 		 or Honey Sharma forgot to put something here...</p>
 		
