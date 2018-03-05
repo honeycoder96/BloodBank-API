@@ -2,6 +2,9 @@
 
 <html class="no-js" xmlns:th="http://www.thymeleaf.org">
 <head>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <!-- BASICS -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -82,8 +85,8 @@
         <div class="col-lg-4">
           <div class="align-center">
             <i class="fa fa-bolt fa-5x mar-bot20"></i>
-            <h4 class="text-bold">Customizable</h4>
-            <p>Easy to add feature</p>
+            <h4 class="text-bold">Spring Based</h4>
+            <p>Designed using Spring Boot Framework</p>
           </div>
         </div>
 
@@ -163,8 +166,8 @@
   <section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="align-center pad-top40 pad-bot40">
-        <blockquote class="bigquote color-white">Quotation Here</blockquote>
-        <p class="color-white">Name</p>
+        <blockquote class="bigquote color-white">In open Source, we feel strongly that to really do something well, you have to get a lot of people involved.</blockquote>
+        <p class="color-white">-Linus Torvalds</p>
       </div>
     </div>
   </section>
@@ -176,8 +179,9 @@
       <div class="row mar-bot40">
         <div class="col-md-offset-3 col-md-6">
           <div class="section-header">
-            <h2 class="section-heading animated" data-animation="bounceInUp">Portfolio</h2>
-            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam.</p>
+            <h2 class="section-heading animated" data-animation="bounceInUp">Documentation</h2>
+            <p>* The POST,PUT and DELETE endpoint for following are also available but due to security reasons they are not described in the documentation.
+            To access these please contact the owner.</p>
           </div>
         </div>
       </div>
@@ -186,12 +190,13 @@
         <nav id="filter" class="col-md-12 text-center">
           <ul>
             <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-            <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web Design</a></li>
-            <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
-            <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
+            <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">BloodBank</a></li>
+            <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Drugs</a></li>
+            <li><a href="#" class="btn-theme btn-small" data-filter=".print">Hospitals</a></li>
           </ul>
         </nav>
-        <div class="col-md-12">
+
+	<!--  <div class="col-md-12">
           <div class="row">
             <div class="portfolio-items isotopeWrapper clearfix" id="3">
 
@@ -303,6 +308,7 @@
                   </div>
                 </div>
               </article>
+         
             </div>
 
           </div>
@@ -310,16 +316,33 @@
 
         </div>
       </div>
-
+      -->
     </div>
+    <!--
   </section>
   <section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">
     <div class="align-center pad-top40 pad-bot40">
-      <blockquote class="bigquote color-white">Indoctum accusamus comprehensam</blockquote>
-      <p class="color-white">Bootstraptaste</p>
+      <blockquote class="bigquote color-white"></blockquote>
+      <p class="color-white"></p>
     </div>
   </section>
-
+-->
+<div class="row">
+<div data-role="collapsible-set" id="collapsible-set-1">
+	<div data-role="collapsible">
+		<h4>BloodBank</h4>
+		<p>Collapsible content.</p>
+	</div>
+	<div data-role="collapsible">
+		<h4>Drugs</h4>
+		<p>Collapsible content.</p>
+	</div>
+	<div data-role="collapsible">
+		<h4>Hospitals</h4>
+		<p>Collapsible content.</p>
+	</div>
+</div>
+</div>
   <!-- contact -->
   <section id="section-contact" class="section appear clearfix">
     <div class="container">
@@ -335,7 +358,6 @@
         <div class="col-md-8 col-md-offset-2">
           <div class="cform" id="contact-form">
             <div id="sendmessage">
-              Your message has been sent. Thank you!
             </div>
             <div id="errormessage"></div>
         <div class="typeform-widget" data-url="https://softwaretester.typeform.com/to/kw41nE" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=kw41nE&utm_source=typeform.com-11158437-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
