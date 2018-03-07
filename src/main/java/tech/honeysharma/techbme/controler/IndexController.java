@@ -11,8 +11,23 @@ public class IndexController {
 		return "index";
 	}
 
-	@RequestMapping("//documentation")
+	@RequestMapping("/documentation")
 	public String documentation() {
 		return "blog1";
+	}
+
+	@RequestMapping("/drugsdoc")
+	public String drugs() {
+		return "drugs";
+	}
+
+	@RequestMapping("/hospitals")
+	public String hospitals() {
+		return "hospitals";
+	}
+
+	@RequestMapping("/diseases")
+	public String diseases() {
+		return "diseases";
 	}
 }
